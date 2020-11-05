@@ -6,7 +6,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <Configurations>Debug;Release;Package</Configurations>
-    <LangVersion>8</LangVersion>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,6 +17,10 @@
     <PackageReference Include="TypeKitchen" Version="1.2.12" />
     <PackageReference Include="TypeKitchen.Pooling" Version="1.2.12" />
     <PackageReference Include="WebStrings" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Metrics.Standard\Metrics.Standard.csproj" />
   </ItemGroup>
 
 </Project>

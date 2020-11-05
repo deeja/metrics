@@ -1,5 +1,6 @@
 using System.Runtime.CompilerServices;
 
+[assembly: InternalsVisibleTo("Metrics")]
 [assembly: InternalsVisibleTo("HQ.Extensions.Metrics.AspNetCore")]
 [assembly: InternalsVisibleTo("HQ.Extensions.Metrics.Tests")]
 [assembly: InternalsVisibleTo("HQ.Extensions.Metrics.Reporters.Console")]

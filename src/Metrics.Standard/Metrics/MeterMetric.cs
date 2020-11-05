@@ -137,7 +137,7 @@ namespace Metrics
             return other.Name.CompareTo(Name);
         }
 
-        internal IMetric Copy()
+        public IMetric Copy()
         {
             var copy = new MeterMetric(Name, EventType, RateUnit, _m15Rate, _m1Rate, _m5Rate, _startTime);
             return copy;
